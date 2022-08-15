@@ -30,9 +30,6 @@ module.exports = async function Hi(client, body, from, pushname, id) {
     mesg += `عدد القروبات : ${number_groups}\n`
     mesg += `عدد جهات الإتصال : ${number_user}\n\n`
     mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
-    mesg += 'يمكنك متابعة البوت على تيليجرام عبر الحساب @adhk2r_bot 🤖\n\n'
-    mesg += 'قروب أذكار المسلم على تيليجرام : https://t.me/tqw24h\n'
-    mesg += 'بوت أذكار على تيليجرام : https://t.me/adhk2r_bot'
 
     await client.sendMessage(from, { text: mesg }, { quoted: id }).catch((error) => Error(error));
 
